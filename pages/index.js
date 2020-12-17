@@ -56,7 +56,7 @@ export default function Home() {
                   Feel The <span className="text-red-700">Power</span>
                 </h1>
                 <p className="mt-4 text-lg text-gray-300">
-                  Welcome to The Power Room. We are a fitness and training
+                  Welcome to The Elite Fiteness. We are a fitness and training
                   center that focuses on pushing you to your absolute limit.
                   Download our complete brochure to get started today!
                 </p>

@@ -17,7 +17,13 @@ export default function Header () {
      <div className={"w-full text-white " + (router.pathname === '/' ? "top-0 absolute z-50" : "bg-black")}>
   <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
     <div className="p-4 flex flex-row items-center justify-between">
-      <Link href="/"><a className="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">Elite Fitness</a></Link>
+    <Link href="/"><Image
+        src="/eliteFitnessLogo.png"
+        alt="Picture of the author"
+        width={160}
+        height={72}
+      /></Link>
+      {/* <Link href="/"><a className="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">Elite Fitness</a></Link> */}
       <button onClick={() => setNav(!open)} className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" >
         <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
           {!open && <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>}
