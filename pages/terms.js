@@ -2,93 +2,286 @@ import Link from 'next/link'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function Terms () {
+export default function Terms() {
 
 
   return (
     <>
-    <Header />
-    <div className="relative pt-12 pb-32 px-6 sm:px-24 2xl:px-96 2xl:mx-32 content-center items-center justify-center bg-white text-black">
+      <Header />
+      <div className="relative pt-12 pb-32 px-6 sm:px-24 2xl:px-96 2xl:mx-32 content-center items-center justify-center bg-white text-black">
 
-    <h2 className="text-2xl font-semibold mb-12">Elite Fitness, LLC Membership Terms And Conditions As Of 1 June 2017</h2>
+        <h2 className="text-2xl font-semibold mb-12">Elite Fitness, LLC Membership Terms And Conditions As Of 1 June 2017</h2>
 
-<div className="mb-4 text-gray-700 text-lg tracking-wide">
-  <p>
-  <span className="text-red-600 font-semibold">Update 7/1/2020:</span> Governor Abbott issues <a className="text-gray-800 underline">executive order</a> requiring all Texans to wear face coverings in public spaces. 
-  <span className="font-bold text-gray-800"> Please bring a mask with you and wear it inside the facility.</span> Guests are not required to wear masks while exercising outdoors on our 45 yards of turf.
-  </p>
-</div>
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>DEFINITIONS:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
 
-<div className="mb-4 text-gray-700 text-lg tracking-wide">
-  <p>
-  <span className="text-red-600 font-semibold">Update 6/4/2020:</span> Governor approves increase to 50% capacity, membership dues will resume Friday, June 5th. 
-  June 4th is the last day session reservations will be required.
-  </p>
-</div>
+        </div>
 
-<div className="mb-4 pt-12 pb-8 px-10 text-gray-700 text-lg tracking-wide">
-  <p>
-  Here are some details about how we plan to operate under the current circumstances caused by COVID-19. 
-  </p>
-</div>
 
-<div className="mb-16 tracking-wide">
-  <p className="text-yellow-600 font-semibold mb-6">THE FOLLOWING WAIVERS ARE REQUIRED FOR ALL NEW GUESTS:</p>
-  <div className="flex items-center justify-center space-x-20 text-lg underline font-semibold">
-  <a>Health Decleration</a>
-  <a>Liability Waiver</a>
-  </div>
-</div>
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>MEMBERSHIP:</p>
+        </div>
+        <p class="p4"><em>2.1 By signing this Membership Application Form you agree to comply with these Terms and Conditions of Membership and the then current edition of the Club Rules as may be amended by Elite Fitness from time to time at its discretion throughout your period of membership.</em></p>
+<p className="p4"><em>2.2 You will only be permitted to use the Club facilities provided your membership is current and fully paid up or you have made payment arrangements acceptable to Elite Fitness.</em></p>
+<p className="p4"><em>2.3 This Agreement is a legally binding obligation for which the Member is financially responsible. If the Member has a prepaid membership, the Member acknowledges that the fee paid is not refundable under any circumstances, after the cooling off period. If the Member has a term membership, the Member&rsquo;s membership will automatically renew after the term ends and the Member will continue to be billed according to the Member&rsquo;s regular billing schedule unless the Member provides notice of cancellation. A term membership has an early cancellation fee of $150.</em></p>
+<p className="p4"><em>2.4 The Member agrees not to conduct any kind of commercial or business activity in the Club and will not act as a personal trainer for anyone within the Club.</em></p>
+<p className="p4"><em>2.5 We may end your membership without notice if you repeatedly or seriously breach these terms and conditions with the full membership fee for the remainder of the Commitment Period declared due and payable.</em></p>
+<p className="p4"><em>2.6 If you fail to make membership fee payments on the date they are due within your contractual period or fail to pay one complete calendar month membership after notifying Elite Fitness of your intention to cancel in accordance with the cancellation policy outlined in this document, you understand that Elite Fitness has full authority to debit my nominated credit/debit card.</em></p>
+<p className="p4"><em>2.7 Membership fees are subject to periodic increase (normally annually). We will notify you 14 days in advance of the change to your account being debited.</em></p>
+<p className="p4"><em>2.8 After your Commitment Period, your membership continues on a monthly basis by paying the monthly membership fee equal to the monthly installment agreed for your category of membership.</em></p>
+<p className="p4"><em>2.9 The Member understands that the Member is responsible for updating their address and contact information.</em></p>
 
-<div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
-  <p>What to expect when you're here </p>
-</div>
+        </div>
 
-<div className="text-gray-700 text-lg tracking-wide">
-  <p className="font-semibold text-lg text-gray-800 mb-4">Sanitizing and Cleaning Protocols</p>
-  <p className="mb-4">EPA registered disinfecting wipes and hand sanitizer will be stationed throughout the gym.</p>
-  <ul className="pl-8 mb-4 list-disc">
-    <li>Please sanitize upon entering the facility.</li>
-    <li>We ask that you sanitize each piece of equipment before and after use.</li>
-  </ul>
-</div>
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>DURATION:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
 
-<div className="text-gray-700 mb-4 text-lg tracking-wide">
-  <p className="font-semibold text-lg text-gray-800 mb-4">Services and Amenities</p>  
-  <ul className="pl-8 mb-4 list-disc">
-    <li><span className="font-semibold text-gray-800">Shared equipment</span> (i.e. mats, Hyperice products, sports balls) will not be offered.
-If you have a <span className="font-semibold text-gray-800">mat</span> at home, you may bring it with you.</li>
-    <li>The <span className="font-semibold text-gray-800">water fountain</span> will not be available.</li>
-    <li><span className="font-semibold text-gray-800">Foam rollers</span> can be checked out from the front desk and will be thoroughly sanitized after use.</li>
-    <li>The <span className="font-semibold text-gray-800">retail store</span> will be open. We ask that you please sanitize your hands prior to shopping.</li>
-  </ul>
-  <p className="pl-8">Trying on clothes will not be permitted at this time.<br />
-Credit cards will be the only method of payment.</p>
-</div>
+        </div>
 
-<div className="text-gray-700 mb-12 text-lg tracking-wide">
-  <p className="font-semibold text-lg text-gray-800 mb-4">Safety and Distancing</p>  
-  <p className="mb-4">Our team members will be wearing masks and gloves at all times. Guests are encouraged wear a face mask when not exercising. Gloves are recommended, but not required.</p>
-  <p>Please maintain a safe distance from other guests during your workout. The CDC recommends 6 ft distancing decreases the opportunity of spreading the virus.</p>
-</div>
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>DEFAULT AND LATE PAYMENT:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
 
-<div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
-  <p>OTHER QUESTION(S)</p>
-</div>
+        </div>
 
-<div className="text-gray-700 mb-16 text-lg tracking-wide">
-  <p className="font-semibold text-lg text-gray-800 mb-4">When will the gym allow full occupancy again?</p>  
-  <p className="mb-4">We are currently at 50% occupancy and are keeping up with the federal, state, and local news daily to stay current on all developments with the government’s health and safety protocols during the reopening phases. We will be sure to keep you informed when the next phase is greenlit.</p>
-</div>
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>SUSPENSION OF MEMBERSHIP FOR CONTRACT MEMBERS:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
 
-<div className="text-gray-700 text-lg tracking-wide">
-  <p className="font-semibold text-lg text-gray-800 mb-4">Helpful Information</p>  
-  <p className="mb-2"><a className="mb-4 underline cursor-pointer hover:text-gray-500">How Covid Spreads</a></p>
-  <p className="mb-2"><a className="mb-4 underline cursor-pointer hover:text-gray-500">Minimum Health Standards Checklist for Gyms</a></p>
-  <p className="mb-2"><a className="mb-4 underline cursor-pointer hover:text-gray-500">Minimum Health Standards Checklist for Gym Patrons</a></p>  
-</div>
-    </div>
-      
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>TERMINATION FOR 1 YEAR AGREEMENT:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>TERMINATION FOR MONTH TO MONTH MEMBERS:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>KEY ACCESS FOBS:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>FACILITIES AND SERVICES:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>BEHAVIOR:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>MINORS:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>CLUB TERMS AND CONDITIONS:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>Sale of Club:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>Notices:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+        <div className="mb-12">
+        <div className="p-1 mb-6 bg-black text-white text-xl tracking-wide capitalize">
+          <p>State Required Notice to Purchaser:</p>
+        </div>
+<p className="p1"><em>1.1 Elite Fitness or We or Us: Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.2 Application Form: the membership application, direct debit instruction, and the terms and conditions.</em></p>
+<p className="p1"><em>1.3 Members: people we accept to become members.</em></p>
+<p className="p1"><em>1.4 The Club: the members fitness club operated by Elite Fitness, LLC</em></p>
+<p className="p1"><em>1.5 The terms and conditions: means the terms and conditions set out in sections 1 to 14 below (which may be updated from time to time), together with the Application Form and any other rules which may apply to law.</em></p>
+<p className="p1"><em>1.6 Fees:</em></p>
+<p className="p1"><em>We have several categories of fees (the financial details of which are set out in the Application Form):</em></p>
+<p className="p1"><em>Guest Fee: a charge for your guests to use the facilities;</em></p>
+<p className="p1"><em>Start up fee: a non-refundable fee charged by Elite Fitness upon joining the club;</em></p>
+<p className="p1"><em>Monthly membership fees: the fees you must pay each month by direct debit for the month to come;</em></p>
+<p className="p1"><em>Additional fees: for example, key fob replacement fee, merchandise purchases, or any other services . We can change the fees if we decide.</em></p>
+
+        </div>
+
+      </div>
       <Footer />
     </>
   )
