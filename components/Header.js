@@ -8,21 +8,26 @@ export default function Header () {
   const [open, setNav] = useState(false);
 
   const tabClass = {
-    active: "px-4 py-2 mt-2 text-sm border-b-2 border-red-700  font-semibold md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline",
-    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:outline-none focus:shadow-outline"
+    active: "px-4 py-2 mt-2 text-sm border-b-2 border-red-700  font-semibold md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline",
+    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent border-b-2 border-transparent hover:border-red-700 md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline"
+  }
+
+  const tabClassMobile = {
+    active: "px-4 py-2 mt-2 text-sm bg-red-700 rounded-lg mx-2 font-semibold md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline",
+    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-700 mx-2 focus:outline-none focus:shadow-outline"
   }
 
   return (
     <>
      <div className={"w-full text-white " + (router.pathname === '/' ? "top-0 absolute z-50" : "bg-black")}>
-  <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-    <div className="p-4 flex flex-row items-center justify-between">
-    <Link href="/"><Image
+  <div className="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div className="p-4 px-8 flex flex-row items-center justify-between">
+    <a href="/"><Image
         src="/eliteFitnessLogo.png"
         alt="Picture of the author"
         width={160}
         height={72}
-      /></Link>
+      /></a>
       {/* <Link href="/"><a className="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">Elite Fitness</a></Link> */}
       <button onClick={() => setNav(!open)} className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" >
         <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
@@ -32,11 +37,11 @@ export default function Header () {
       </button>
     </div>
     {/* mobile */}
-    {open && <nav className={"flex flex-col flex-grow pb-4 md:hidden " + (!open ? 'hidden' : '')}>
-      <Link href="/"><a className={router.pathname === '/' ? tabClass.active : tabClass.inActive}>Home</a></Link>
-      <Link href="/info"><a className={router.pathname === '/info' ? tabClass.active : tabClass.inActive}>Info</a></Link>
-      <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClass.active : tabClass.inActive}>Covid-19</a></Link>
-      <Link href="/support"><a className={router.pathname === '/support' ? tabClass.active : tabClass.inActive}>Join Now</a></Link>
+    {open && <nav className={"bg-black opacity-95 flex flex-col flex-grow pb-4 md:hidden " + (!open ? 'hidden' : '')}>
+      <Link href="/"><a className={router.pathname === '/' ? tabClassMobile.active : tabClassMobile.inActive}>Home</a></Link>
+      <Link href="/info"><a className={router.pathname === '/info' ? tabClassMobile.active : tabClassMobile.inActive}>Info</a></Link>
+      <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClassMobile.active : tabClassMobile.inActive}>Covid-19</a></Link>
+      <a href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o" className={tabClassMobile.inActive}>Join Now</a>
     </nav>}
 
     {/* desktop */}
@@ -44,7 +49,7 @@ export default function Header () {
       <Link href="/"><a className={router.pathname === '/' ? tabClass.active : tabClass.inActive}>Home</a></Link>
       <Link href="/info"><a className={router.pathname === '/info' ? tabClass.active : tabClass.inActive}>Info</a></Link>
       <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClass.active : tabClass.inActive}>Covid-19</a></Link>
-      <Link href="/support"><a className={router.pathname === '/support' ? tabClass.active : tabClass.inActive}>Join Now</a></Link>
+      <a href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o" className={tabClass.inActive}>Join Now</a>
     </nav>
   </div>
 </div>

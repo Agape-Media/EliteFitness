@@ -47,12 +47,13 @@ export default function Footer() {
             
             <div className="space-y-4 tracking-wide pb-10 md:mb-0 px-4">
             <p>10416 Spencer Hwy, La Porte, TX 77571</p>
-            <p>(832)348-6377</p>
-            <p>elitefitnesslp@gmail.com</p>
+            <p><a href="tel:832-348-6377">(832)348-6377</a></p>
+            <p><a href="mailto:elitefitnesslp@gmail.com">elitefitnesslp@gmail.com</a></p>
+            <p className="text-gray-700"><a target="_blank" href="https://goo.gl/maps/VNaWwvd7bZwvhnUv7">Map it</a></p>
             </div>
 
             <div className="space-y-4 font-semibold tracking-wide pb-10 md:mb-0 px-4">
-            <p><Link href="/cancelation">Member Cancelation</Link></p>
+            <p><Link href="/info">Member Cancelation</Link></p>
             <p><Link href="/info">Contact Us</Link></p>
             <p><Link href="/terms">Terms Of Use</Link></p>
             </div>
@@ -61,10 +62,13 @@ export default function Footer() {
           <div
             className="flex flex-wrap items-center md:justify-between justify-center"
           >
-            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-gray-600 font-semibold py-1">
-                Copyright © The Elite Fiteness
+            <div className="sm:flex items-center justify-around w-full px-4 mx-auto text-center">
+            <div className="text-sm text-gray-600 font-semibold py-1">
+            Powered/Designed by <a href="https://agapeMedia.io" className="underline">Agape Media</a>
             </div>
+            <div className="text-sm text-gray-600 font-semibold py-1">
+                Copyright © The Elite Fiteness
+            </div>            
             </div>
           </div>
         </div>

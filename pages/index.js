@@ -56,15 +56,15 @@ export default function Home() {
                   Feel The <span className="text-red-700">Power</span>
                 </h1>
                 <p className="mt-4 text-lg text-gray-300">
-                  Welcome to The Elite Fiteness. We are a fitness and training
+                  Welcome to Elite Fiteness. We are a fitness and training
                   center that focuses on pushing you to your absolute limit.
-                  Download our complete brochure to get started today!
+                  
                 </p>
-                <a
+                {/* <a
                   href="#"
                   className="bg-transparent hover:bg-red-700 text-red-700 font-semibold hover:text-white p-4 border border-red-700 hover:border-transparent rounded inline-block mt-5 cursor-pointer"
                   >Download Brochure</a
-                >
+                > */}
               </div>
             </div>
           </div>
@@ -107,11 +107,11 @@ export default function Home() {
             >
               <div className="md:pr-12 ">
                 <small className="text-red-700">About our gym</small>
-                <h3 className="text-4xl uppercase font-bold">Safe Body Building</h3>
+                <h3 className="text-4xl uppercase font-bold">Rise to new levels</h3>
                 <p className="mt-4 text-lg leading-relaxed">
-                  The extension comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
+                We are a 24/7 workout facility offering commercial equipment, 
+                warehouse-style lifting and cross-training to help you create
+                 a lasting change in your life.
                 </p>
                 <ul className="list-none mt-6">
                   <li className="py-2">
@@ -195,7 +195,7 @@ export default function Home() {
                 <div className="pt-6 text-center">
                   <h5 className="text-xl font-bold">Mr Rogers</h5>
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Neighborhood Watchman
+                    Some Cool NickName
                   </p>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function Home() {
                 <div className="pt-6 text-center">
                   <h5 className="text-xl font-bold">Strawberry Shortcake</h5>
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Cupcake Smasher
+                  Some Cool NickName
                   </p>
                 </div>
               </div>
@@ -235,7 +235,7 @@ export default function Home() {
                 <div className="pt-6 text-center">
                   <h5 className="text-xl font-bold">Ronald McDonald</h5>
                   <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                    Double Whoopass With Cheese
+                  Some Cool NickName
                   </p>
                 </div>
               </div>
