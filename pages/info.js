@@ -104,78 +104,39 @@ export default function Info() {
               Frequently Asked Question
             </h1>
           </div>
-          <div className="flex flex-wrap lg:w-4/5  sm:mb-2 ">
-            <div className="w-full lg:w-1/2 lg:pr-4 py-2">
+          <div className="lg:w-4/5  sm:mb-2 ">
+            <div className="w-full lg:w-3/4 py-2">
               <details className="mb-4">
                 <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How Long is this site live?
+                  Do you offer military discounts?
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                Yes. We offer a discount on memberships to anyone who has served or is currently serving in the military.<br/>
+*Please show military I.D to receive this discount<br/>
+*only applies to memberships.
                 </span>
               </details>
               <details className="mb-4">
                 <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                  Can I install/upload anything I want on there?
+                  What is your cancellation policy
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
+                We require a 30 day notice of cancellation.
+</span>
               </details>
               <details className="mb-4">
                 <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How can I migrate to another site?
+                  How old do I have to be
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                You must be 14 to use the facility. 14-15 with an adult 16-17 an adult has to sign waivers
                 </span>
               </details>
             </div>
-            <div className="w-full lg:w-1/2 lg:pl-4 py-2">
-              <details className="mb-4">
-                <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  Can I change the domain you give me?
-                </summary>
-
-                <span className="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-              <details className="mb-4">
-                <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How many sites I can create at once?
-                </summary>
-
-                <span className="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-              <details className="mb-4">
-                <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How can I communicate with you?
-                </summary>
-
-                <span className="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
-                </span>
-              </details>
-            </div>
-          </div>
+           </div>
         </div>
       </section>
     </div>
