@@ -56,7 +56,7 @@ export default function Footer() {
 
             <div className="space-y-4 font-semibold tracking-wide pb-10 md:mb-0 px-4">
             <p><Link href="/cancelation">Member Cancelation</Link></p>
-            <p><Link href="/info">Contact Us</Link></p>
+            <p><Link href="/contact">Contact Us</Link></p>
             <p><Link href="/terms">Terms Of Use</Link></p>
             </div>
           </div>
