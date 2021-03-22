@@ -11,7 +11,7 @@ export default function Info() {
       <Header />
       <div className="relative pt-12 pb-32 px-6 sm:px-24 2xl:px-48 2xl:mx-32 content-center items-center justify-center bg-white text-black tracking-wide">
 
-        <div className="mb-24">
+        <div className="hidden mb-24">
           <h2 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-8">Membership Options</h2>
 
           <div className="w-full grid lg:grid-cols-3 gap-x-6 gap-y-4">
@@ -107,32 +107,30 @@ export default function Info() {
           <div className="lg:w-4/5  sm:mb-2 ">
             <div className="w-full lg:w-3/4 py-2">
               <details className="mb-4">
-                <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  Do you offer military discounts?
+                <summary className="font-semibold cursor-pointer focus:outline-none bg-gray-200 rounded-md py-2 px-4">
+                How old do I have to be? 
                 </summary>
 
                 <span>
-                Yes. We offer a discount on memberships to anyone who has served or is currently serving in the military.<br/>
-*Please show military I.D to receive this discount<br/>
-*only applies to memberships.
+                Ages 13-15 can workout accompanied by a parent member, but still must have their own membership. Ages 16 and 17 can join and workout without a parent, but must have parent consent.
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                  What is your cancellation policy
+                <summary className="font-semibold cursor-pointer focus:outline-none bg-gray-200 rounded-md py-2 px-4">
+                Do you offer personal training? 
                 </summary>
 
                 <span>
-                We require a 30 day notice of cancellation.
+                Yes. Please contact our trainer, Andy Hughes, at <a href="tel:832-984-8322">832-984-8322</a> or <a href="mailto:andyhughes77@gmail.com">andyhughes77@gmail.com</a>
 </span>
               </details>
               <details className="mb-4">
-                <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                  How old do I have to be
+                <summary className="font-semibold cursor-pointer focus:outline-none bg-gray-200 rounded-md py-2 px-4">
+                What is your cancellation policy? 
                 </summary>
 
                 <span>
-                You must be 14 to use the facility. 14-15 with an adult 16-17 an adult has to sign waivers
+                We require a 30 day notice for cancellation via our cancellation form provided on the Home page of our website. 
                 </span>
               </details>
             </div>

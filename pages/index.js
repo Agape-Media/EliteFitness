@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Image from 'next/image'
 
 export default function Home() {
   const [open, setNav] = useState(false);
@@ -53,10 +54,10 @@ export default function Home() {
             <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div>
                 <h1 className="text-white font-semibold text-5xl">
-                  Feel The <span className="text-red-700">Power</span>
+                  Welcome to <span className="text-red-700">Elite</span> Fitness
                 </h1>
                 <p className="mt-4 text-lg text-gray-300">
-                  Welcome to Elite Fiteness. We are a fitness and training
+                  We are a fitness and training
                   center that focuses on pushing you to your absolute limit.
                   
                 </p>
@@ -100,6 +101,13 @@ export default function Home() {
                 className="max-w-full rounded-lg shadow-lg"
                 src="https://images.unsplash.com/photo-1550345332-09e3ac987658?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
               />
+              {/* <Image
+              width={469}
+              height={703}
+                alt="..."
+                className="max-w-full rounded-lg shadow-lg"
+                src="/girlLifting.jpeg"
+              /> */}
             </div>
             <div
               className="w-full md:w-5/12 ml-auto mr-auto px-4 "
@@ -109,9 +117,9 @@ export default function Home() {
                 <small className="text-red-700">About our gym</small>
                 <h3 className="text-4xl uppercase font-bold">Rise to new levels</h3>
                 <p className="mt-4 text-lg leading-relaxed">
-                We are a 24/7 workout facility offering commercial equipment, 
-                warehouse-style lifting and cross-training to help you create
-                 a lasting change in your life.
+                Elite Fitness is a 24/7 workout facility offering commercial equipment, 
+                warehouse-style lifting and cross-training to cater to different 
+                workout styles and help you create a lasting change in your life.
                 </p>
                 <ul className="list-none mt-6">
                   <li className="py-2">

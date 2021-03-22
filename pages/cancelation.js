@@ -17,9 +17,9 @@ export default function Info() {
 
         <ol className="list-decimal text-gray-600 space-y-1 mb-6 pl-12">
             <li>First and last name on account </li>
-            <li>Last 4 digits of card on file </li>
-            <li>Barcode number</li>
-            <li>Reason for cancelling </li>
+            <li>Date of birth</li>
+            <li>Phone Number</li>
+            <li>Reason for cancelling</li>
         </ol>
 
         <p className="text-red-700 underline font-bold text-lg mb-4"><a href="mailto:elitefitnesslp@gmail.com">Click here to submit cancellation request</a></p>

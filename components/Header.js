@@ -8,8 +8,8 @@ export default function Header () {
   const [open, setNav] = useState(false);
 
   const tabClass = {
-    active: "px-4 py-2 mt-2 text-sm border-b-2 border-red-700  font-semibold md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline",
-    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent border-b-2 border-transparent hover:border-red-700 md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline"
+    active: "px-4 py-2 mt-2 text-sm border-b-2 border-red-700  font-semibold md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline cursor-pointer",
+    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent border-b-2 border-transparent hover:border-red-700 md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline cursor-pointer"
   }
 
   const tabClassMobile = {
@@ -39,16 +39,18 @@ export default function Header () {
     {/* mobile */}
     {open && <nav className={"bg-black opacity-95 flex flex-col flex-grow pb-4 md:hidden " + (!open ? 'hidden' : '')}>
       <Link href="/"><a className={router.pathname === '/' ? tabClassMobile.active : tabClassMobile.inActive}>Home</a></Link>
-      <Link href="/info"><a className={router.pathname === '/info' ? tabClassMobile.active : tabClassMobile.inActive}>Info</a></Link>
-      <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClassMobile.active : tabClassMobile.inActive}>Covid-19</a></Link>
+      <Link href="/contact"><a className={router.pathname === '/contact' ? tabClassMobile.active : tabClassMobile.inActive}>Contact Us</a></Link>
+      <Link href="/member"><a className={router.pathname === '/member' ? tabClassMobile.active : tabClassMobile.inActive}>Member Portal</a></Link>
+      {/* <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClassMobile.active : tabClassMobile.inActive}>Covid-19</a></Link> */}
       <a href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o" className={tabClassMobile.inActive}>Join Now</a>
     </nav>}
 
     {/* desktop */}
-    <nav className={"hidden md:block flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row " + (!open ? 'hidden' : '')}>
+    <nav className={"hidden flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row " + (!open ? 'hidden' : '')}>
       <Link href="/"><a className={router.pathname === '/' ? tabClass.active : tabClass.inActive}>Home</a></Link>
-      <Link href="/info"><a className={router.pathname === '/info' ? tabClass.active : tabClass.inActive}>Info</a></Link>
-      <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClass.active : tabClass.inActive}>Covid-19</a></Link>
+      <Link href="/contact"><a className={router.pathname === '/contact' ? tabClass.active : tabClass.inActive}>Contact Us</a></Link>
+      <a href="https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ" className={tabClass.inActive}>Member Portal</a>
+      {/* <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClass.active : tabClass.inActive}>Covid-19</a></Link> */}
       <a href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o" className={tabClass.inActive}>Join Now</a>
     </nav>
   </div>
