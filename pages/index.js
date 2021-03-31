@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Image from 'next/image'
-
+import Contact from '../components/Contact'
 export default function Home() {
   const [open, setNav] = useState(false);
 
@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Elite Fitness</title>
+        <link rel="icon" href="/icon.png" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>
       </Head>
 
@@ -56,9 +56,8 @@ export default function Home() {
                 <h1 className="text-white font-semibold text-5xl">
                   Welcome to <span className="text-red-700">Elite</span> Fitness
                 </h1>
-                <p className="mt-4 text-lg text-gray-300">
-                  We are a fitness and training
-                  center that focuses on pushing you to your absolute limit.
+                <p className="mx-auto w-2/3 mt-4 text-lg text-gray-300">
+                We are a fitness and training facility that focuses on helping you become the <span className="text-red-700 font-medium">best version of you.</span>
                   
                 </p>
                 {/* <a
@@ -121,52 +120,7 @@ export default function Home() {
                 warehouse-style lifting and cross-training to cater to different 
                 workout styles and help you create a lasting change in your life.
                 </p>
-                <ul className="list-none mt-6">
-                  <li className="py-2">
-                    <div className="flex items-center">
-                      <div>
-                        <span
-                          className="font-semibold inline-block py-3 mr-3 text-red-700"
-                          ><i className="fas fa-dumbbell fa-2x"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 className="text-xl">
-                          The latest & greatest gym equipment
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="py-2">
-                    <div className="flex items-center">
-                      <div>
-                        <span
-                          className="font-semibold inline-block py-3 mr-3 text-red-700"
-                          ><i className="fas fa-hard-hat fa-2x"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 className="text-xl">
-                          5-inch, quality foam floor padding
-                        </h4>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="py-2">
-                    <div className="flex items-center">
-                      <div>
-                        <span
-                          className="font-semibold inline-block py-3 mr-3 text-red-700"
-                          ><i className="fas fa-users fa-2x"></i
-                        ></span>
-                      </div>
-                      <div>
-                        <h4 className="text-xl">3 professional trainers</h4>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -178,11 +132,10 @@ export default function Home() {
           <div className="flex flex-wrap justify-center text-center mb-24">
             <div className="w-full lg:w-6/12 px-4">
               <h2 className="text-4xl font-semibold uppercase">
-                Meet Our Trainers
+                Our Facility
               </h2>
               <p className="text-lg leading-relaxed m-4">
-                Our trainers are are here to dedicate the time and effort that
-                you need to get in the best shape of your life
+                Our three workout sections designed to help get oyu in the best shape of your life.
               </p>
             </div>
           </div>
@@ -196,15 +149,15 @@ export default function Home() {
               <div className="px-6">
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1597347343908-2937e7dcc560?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src="/freeWeights.jpg"
                   className="shadow-lg rounded max-w-full mx-auto"
-                  style={{maxWidth: "250px"}}
+                  // style={{maxWidth: "250px"}}
                 />
                 <div className="pt-6 text-center">
-                  <h5 className="text-xl font-bold">Mr Rogers</h5>
-                  <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  <h5 className="text-xl font-bold">Commercial</h5>
+                  {/* <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                     Some Cool NickName
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -216,15 +169,16 @@ export default function Home() {
               <div className="px-6">
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                  src="/turf.jpg"
+                  style={{height: "236px"}}
                   className="shadow-lg rounded max-w-full mx-auto"
-                  style={{maxWidth: "250px"}}
+                  // style={{maxWidth: "250px"}}
                 />
                 <div className="pt-6 text-center">
-                  <h5 className="text-xl font-bold">Strawberry Shortcake</h5>
-                  <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  <h5 className="text-xl font-bold">Cross-training</h5>
+                  {/* <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                   Some Cool NickName
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -236,15 +190,16 @@ export default function Home() {
               <div className="px-6">
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  src="/racks.jpg"
                   className="shadow-lg rounded max-w-full mx-auto"
-                  style={{maxWidth: "250px"}}
+                  
+                  // style={{maxWidth: "250px"}}
                 />
                 <div className="pt-6 text-center">
-                  <h5 className="text-xl font-bold">Ronald McDonald</h5>
-                  <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                  <h5 className="text-xl font-bold">Warehouse</h5>
+                  {/* <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
                   Some Cool NickName
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
@@ -278,79 +233,14 @@ export default function Home() {
               </h2>
               <p className="text-lg leading-relaxed mt-4 mb-4">
                 Contact us to ask any questions, aquire a membership, talk to
-                our trainers or anything else
+                our trainers or anything else.
               </p>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <!-- Contact Form --> */}
-      <section className="relative block py-24 lg:pt-0 bg-black">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-            <div className="w-full lg:w-6/12 px-4">
-              <div
-                className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300"
-                data-aos="fade-up-right"
-              >
-                <div className="flex-auto p-5 lg:p-10 bg-red-700 text-white">
-                  <h4 className="text-2xl font-semibold">Get in touch</h4>
-                  <p className="leading-relaxed mt-1 mb-4">
-                    Complete this form and we will get back to you in 24 hours.
-                  </p>
-                  <div className="relative w-full mb-3 mt-8">
-                    <label
-                      className="block uppercase text-xs font-bold mb-2"
-                      for="full-name"
-                      >Full Name</label
-                    ><input
-                      type="text"
-                      className="px-3 py-3 text-black placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Full Name"
-                      style={{transition: "all 0.15s ease 0s"}}
-                    />
-                  </div>
-                  <div className="relative w-full mb-3">
-                    <label
-                      className="block uppercase text-xs font-bold mb-2"
-                      for="email"
-                      >Email</label
-                    ><input
-                      type="email"
-                      className="px-3 py-3 text-black placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Email"
-                      style={{transition: "all 0.15s ease 0s"}}
-                    />
-                  </div>
-                  <div className="relative w-full mb-3">
-                    <label
-                      className="block uppercase text-xs font-bold mb-2"
-                      for="message"
-                      >Message</label
-                    ><textarea
-                      rows="4"
-                      cols="80"
-                      className="px-3 py-3 text-black placeholder-gray-400 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                      placeholder="Type a message..."
-                    ></textarea>
-                  </div>
-                  <div className="text-center mt-6">
-                    <button
-                      className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                      type="button"
-                      style={{transition: "all 0.15s ease 0s"}}
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+<Contact />
+      </main>
 
 <Footer />
     </div>
