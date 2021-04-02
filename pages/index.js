@@ -135,7 +135,7 @@ export default function Home() {
                 Our Facility
               </h2>
               <p className="text-lg leading-relaxed m-4">
-                Our three workout sections designed to help get oyu in the best shape of your life.
+                Our three workout sections designed to help get you in the best shape of your life.
               </p>
             </div>
           </div>
