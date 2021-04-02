@@ -233,7 +233,7 @@ export default function Home() {
               </h2>
               <p className="text-lg leading-relaxed mt-4 mb-4">
                 Contact us to ask any questions, aquire a membership, talk to
-                our trainers or anything else.
+                our staff or anything else.
               </p>
             </div>
           </div>
