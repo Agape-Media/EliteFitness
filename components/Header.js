@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react';
 import { useRouter } from 'next/router'
 
-export default function Header () {
+export default function Header ({home}) {
   const router = useRouter()
   const [open, setNav] = useState(false);
 
@@ -22,12 +22,12 @@ export default function Header () {
      <div className={"w-full text-white " + (router.pathname === '/' ? "top-0 absolute z-50" : "bg-black")}>
   <div className="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
     <div className="p-4 px-8 flex flex-row items-center justify-between">
-    <a href="/"><Image
+    {!home ? (<a href="/"><Image
         src="/eliteFitnessLogo.png"
         alt="Picture of the author"
         width={160}
         height={72}
-      /></a>
+      /></a>) : <div style={{"height": "72px"}} />}
       {/* <Link href="/"><a className="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">Elite Fitness</a></Link> */}
       <button onClick={() => setNav(!open)} className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" >
         <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
