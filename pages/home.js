@@ -35,7 +35,7 @@ export default function Home() {
     <main>
       {/* <!-- Hero --> */}
       <div
-        className="relative pt-16 pb-32  px-4 flex flex-col bg-black content-center items-center justify-center"
+        className="relative pt-16 pb-32  px-4 flex flex-col bg-white content-center items-center justify-center"
         style={{minHeight: "95vh"}}
       >
         {/* <img
@@ -53,7 +53,7 @@ export default function Home() {
           <div className="items-center flex flex-wrap">
             <div className="w-full lg:w-7/12 xl:w-6/12 px-4 ml-auto mr-auto text-center">
               <div>
-                <p className="mx-auto mt-4 text-lg sm:text-xl md:text-2xl text-gray-300">
+                <p className="mx-auto mt-4 text-lg sm:text-xl md:text-2xl text-blacK">
                 We are a fitness and training facility that focuses on helping you become the <span className="text-red-700 font-medium">best version of you.</span>                  
                 </p>
               </div>
