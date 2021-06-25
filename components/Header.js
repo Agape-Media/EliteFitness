@@ -1,61 +1,112 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import React, { useState } from 'react';
-import { useRouter } from 'next/router'
+import Link from "next/link";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
+import Hamburger from "./Icons/Hamburger";
+import Times from "./Icons/Times";
 
-export default function Header ({home}) {
-  const router = useRouter()
+const navItems = [
+  {
+    label: "Home",
+    path: "/",
+    id: 0,
+  },
+  {
+    label: "About Us",
+    path: "/about",
+    id: 1,
+  },
+  {
+    label: "Contact Us",
+    path: "/contact",
+    id: 2,
+  },
+  {
+    label: "Member Portal",
+    path: "https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ",
+    id: 3,
+  },
+  {
+    label: "Join Now",
+    path: "https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o",
+    id: 4,
+  },
+];
+
+export default function Header() {
+  const router = useRouter();
   const [open, setNav] = useState(false);
-
-  const tabClass = {
-    active: "px-4 py-2 mt-2 text-sm border-b-2 border-red-700  font-semibold md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline cursor-pointer",
-    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent border-b-2 border-transparent hover:border-red-700 md:mt-0 md:ml-4 focus:outline-none focus:shadow-outline cursor-pointer"
-  }
-
-  const tabClassMobile = {
-    active: "px-4 py-2 mt-2 text-sm bg-red-700 rounded-lg mx-2 font-semibold md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline",
-    inActive: "px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-700 mx-2 focus:outline-none focus:shadow-outline"
-  }
 
   return (
     <>
-     <div className={"w-full text-white " + (router.pathname === '/' ? "top-0 absolute z-50" : "bg-black")}>
-  <div className="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-    <div className="p-4 px-8 flex flex-row items-center justify-between">
-    {!home ? (<a href="/"><Image
-        src="/eliteFitnessLogo.png"
-        alt="Picture of the author"
-        width={160}
-        height={72}
-      /></a>) : <div style={{"height": "72px"}} />}
-      {/* <Link href="/"><a className="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">Elite Fitness</a></Link> */}
-      <button onClick={() => setNav(!open)} className="md:hidden rounded-lg focus:outline-none focus:shadow-outline" >
-        <svg fill="currentColor" viewBox="0 0 20 20" className="w-6 h-6">
-          {!open && <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>}
-          {open && <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>}
-        </svg>
-      </button>
-    </div>
-    {/* mobile */}
-    {open && <nav className={"bg-black opacity-95 flex flex-col flex-grow pb-4 md:hidden " + (!open ? 'hidden' : '')}>
-      <Link href="/"><a className={router.pathname === '/' ? tabClassMobile.active : tabClassMobile.inActive}>Home</a></Link>
-      <Link href="/contact"><a className={router.pathname === '/contact' ? tabClassMobile.active : tabClassMobile.inActive}>Contact Us</a></Link>
-      <Link href="/member"><a className={router.pathname === '/member' ? tabClassMobile.active : tabClassMobile.inActive}>Member Portal</a></Link>
-      {/* <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClassMobile.active : tabClassMobile.inActive}>Covid-19</a></Link> */}
-      <a href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o" className={tabClassMobile.inActive}>Join Now</a>
-    </nav>}
+      <nav className="bg-white px-2 xl:px-0">
+        <div className="relative flex items-center justify-between h-16">
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            {/* Mobile menu button*/}
+            <button
+              onClick={() => setNav(!open)}
+              type="button"
+              className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-gray-500 focus:outline-none transition duration-300 ease-in-out"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
 
-    {/* desktop */}
-    <nav className={"hidden flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row " + (!open ? 'hidden' : '')}>
-      <Link href="/"><a className={router.pathname === '/' ? tabClass.active : tabClass.inActive}>Home</a></Link>
-      <Link href="/contact"><a className={router.pathname === '/contact' ? tabClass.active : tabClass.inActive}>Contact Us</a></Link>
-      <a href="https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ" className={tabClass.inActive}>Member Portal</a>
-      {/* <Link href="/covid-19"><a className={router.pathname === '/covid-19' ? tabClass.active : tabClass.inActive}>Covid-19</a></Link> */}
-      <a href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o" className={tabClass.inActive}>Join Now</a>
-    </nav>
-  </div>
-</div>
-          
+              {!open ? <Hamburger /> : <Times />}
+            </button>
+          </div>
+          {/* Blank */}
+          <div className="hidden md:flex w-24 items-center"></div>
+          <div className="flex items-center justify-center ">
+            <div className="hidden sm:block ">
+              <div className="flex items-center space-x-4 md:space-x-8">
+                {navItems.map((item, i) => (
+                  <Link href={item.path} key={i}>
+                    <a
+                      className={`py-2 mt-2 text-base border-b-2 font-semibold md:mt-0 focus:outline-none focus:shadow-outline cursor-pointer hover:border-red-700 text-gray-800 hover:text-gray-800 ${
+                        router.pathname === item.path
+                          ? "border-red-700"
+                          : "border-transparent"
+                      } ${
+                        item.id == "4" && "text-red-700 font-extrabold text-lg"
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <Link href="/">
+            <img
+              className="h-8 md:h-10 w-auto cursor-pointer"
+              src="/eliteFitnessLogo.png"
+              alt="Elite Fitness Logo"
+            />
+          </Link>
+        </div>
+
+        {/* Mobile menu, show/hide based on menu state. */}
+        {open && (
+          <div className="sm:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1">
+              {navItems.map((item, i) => (
+                <Link href={item.path} key={i}>
+                  <a
+                    className={`text-gray-800 hover:bg-gray-800 hover:text-white px-3 py-2 text-base border-l-4 font-medium block ${
+                      router.pathname === item.path
+                        ? "border-red-700"
+                        : "border-transparent"
+                    }`}
+                  >
+                    {item.label}
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </nav>
     </>
-  )
+  );
 }
