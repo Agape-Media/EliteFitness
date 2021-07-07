@@ -38,8 +38,8 @@ export default function Header() {
 
   return (
     <>
-      <nav className="bg-white ">
-        <div className="relative flex items-center justify-between h-16 px-4 bg-gray-300">
+      <div className="bg-white sm:bg-gray-300">
+        <div className="relative flex items-center justify-between h-16 px-4 ">
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <button
@@ -107,7 +107,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </nav>
+      </div>
     </>
   );
 }
