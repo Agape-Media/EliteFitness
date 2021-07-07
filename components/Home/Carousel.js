@@ -6,7 +6,7 @@ import React, { useState } from "react";
 export default function CarouselPics() {
   return (
     <>
-      <div>
+      <div className="pt-8">
         <Carousel autoplay={true}>
           {Items.map((item, i) => (
             <Item index={i} key={i} img={item.image} content={item.content} />

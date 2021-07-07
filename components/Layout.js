@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Layout({ children }) {
+export default function Layout({ children, home }) {
   return (
     <>
       <Head>
@@ -13,7 +13,9 @@ export default function Layout({ children }) {
       </Head>
       <div className="max-w-6xl w-full h-screen flex flex-col lg:mx-auto">
         <Header />
-        <div className="pt-4 sm:pt-12 flex-1">{children}</div>
+        <div className={`${!home ? "pt-4 sm:pt-12 " : null} flex-1`}>
+          {children}
+        </div>
         <Footer />
       </div>
     </>

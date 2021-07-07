@@ -38,9 +38,9 @@ export default function Header() {
 
   return (
     <>
-      <nav className="bg-white px-2 xl:px-0">
-        <div className="relative flex items-center justify-between h-16">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+      <nav className="bg-white sm:bg-gray-300">
+        <div className="relative flex items-center justify-between h-16 px-4">
+          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <button
               onClick={() => setNav(!open)}
@@ -54,9 +54,14 @@ export default function Header() {
               {!open ? <Hamburger /> : <Times />}
             </button>
           </div>
-          {/* Blank */}
-          <div className="hidden md:flex w-24 items-center"></div>
-          <div className="flex items-center justify-center ">
+          <Link href="/">
+            <img
+              className="h-8 md:h-10 w-auto cursor-pointer"
+              src="/eliteFitnessLogo.png"
+              alt="Elite Fitness Logo"
+            />
+          </Link>
+          <div className="flex items-center justify-center">
             <div className="hidden sm:block ">
               <div className="flex items-center space-x-4 md:space-x-8">
                 {navItems.map((item, i) => (
@@ -77,13 +82,9 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <Link href="/">
-            <img
-              className="h-8 md:h-10 w-auto cursor-pointer"
-              src="/eliteFitnessLogo.png"
-              alt="Elite Fitness Logo"
-            />
-          </Link>
+
+          {/* Blank */}
+          <div className="hidden md:flex w-24 items-center"></div>
         </div>
 
         {/* Mobile menu, show/hide based on menu state. */}
