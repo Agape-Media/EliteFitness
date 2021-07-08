@@ -13,7 +13,7 @@ export default function Layout({ children, home }) {
       </Head>
       <div className="max-w-6xl w-full h-screen flex flex-col lg:mx-auto">
         <Header />
-        <div className={`${!home ? "pt-4 sm:pt-12 " : null} flex-1`}>
+        <div className={`${!home ? "pt-4 sm:pt-12" : "pt-3"} flex-1`}>
           {children}
         </div>
         <Footer />
