@@ -3,20 +3,13 @@ import dynamic from "next/dynamic";
 
 import Layout from "../components/Layout";
 import { Title, PageContainer } from "../components/pageUtils";
-import {
-  PhoneNumberLink,
-  EmailLink,
-  FacebookLink,
-  InstagramLink,
-  MemberPortalLink,
-  JoinNowLink,
-} from "../components/Links";
 
 export default function Contact() {
-  const MapWithNoSSR = dynamic(() => import("../components/Map"), {
+  const MapWithNoSSR = dynamic(() => import("../components/Contact/Map"), {
     loading: () => <p>A map is loading</p>,
     ssr: false, // This line is important. It's what prevents server-side render
   });
+
   return (
     <Layout>
       <PageContainer className="flex flex-col lg:flex-row lg:justify-between">
@@ -51,7 +44,9 @@ export default function Contact() {
           </div>
         </div>
 
-        <MapContainer>{/* <MapWithNoSSR /> */}</MapContainer>
+        <MapContainer>
+          <MapWithNoSSR />
+        </MapContainer>
       </PageContainer>
     </Layout>
   );

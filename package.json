@@ -9,13 +9,9 @@
   },
   "dependencies": {
     "antd": "^4.16.3",
-    "aos": "^2.3.4",
     "autoprefixer": "^10.1.0",
-    "axios": "^0.21.1",
     "babel-plugin-import": "^1.13.3",
     "emailjs-com": "^2.6.4",
-    "formik": "^2.2.6",
-    "google-map-react": "^2.1.10",
     "leaflet": "^1.7.1",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "next": "^10.2.3",

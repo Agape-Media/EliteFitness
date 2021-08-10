@@ -1,7 +1,5 @@
+import React from "react";
 import { Carousel } from "antd";
-
-import Link from "next/link";
-import React, { useState } from "react";
 
 export default function CarouselPics() {
   return (

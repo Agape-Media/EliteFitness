@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Check from "../components/Icons/Check";
 import Layout from "../components/Layout";
 import { Title, SubTitle, PageContainer } from "../components/pageUtils";
 

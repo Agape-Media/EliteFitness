@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
 import { PageContainer } from "../components/pageUtils";
-import Check from "../components/Icons/Check";
+
 export default function Info() {
   return (
     <Layout>
