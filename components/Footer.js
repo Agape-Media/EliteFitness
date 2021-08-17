@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
 
             <div className="space-y-4 font-semibold tracking-wide pb-10 md:mb-0 px-4">
-              <LinkItem href="/cancelation" label="Membership Cancellation" />
+              {/* <LinkItem href="/cancelation" label="Membership Cancellation" /> */}
               <LinkItem href="/terms" label="Terms Of Use" />
             </div>
           </div>
