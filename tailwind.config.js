@@ -6,7 +6,6 @@ module.exports = {
       "./components/**/*.{js,ts,jsx,tsx}",
     ],
     // safelist: ["bg-blue-500", "sm:bg-gray-300"],
-    safelist: ["hover:border-gray-800"],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {

@@ -20,10 +20,7 @@ export default function Join() {
 
           <div className="flex justify-center">
             <Link href="https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o">
-              {/* <button className="cursor-pointer flex justify-center items-center text-xl font-light mt-8 border border-transparent hover:border-gray-800  text-gray-800 px-4 py-2 transition duration-300 ease-in-out focus:outline-none">
-                Join Now
-              </button> */}
-              <button className="cursor-pointer flex justify-center items-center text-xl font-light mt-8 border border-gray-800  text-gray-800 hover:bg-black hover:text-white px-4 py-2 transition duration-300 ease-in-out focus:outline-none">
+              <button className="cursor-pointer text-xl font-light mt-8 border border-gray-800  text-gray-800 hover:bg-black hover:text-white px-4 py-2 transition duration-300 ease-in-out focus:outline-none">
                 Join Now
               </button>
             </Link>
