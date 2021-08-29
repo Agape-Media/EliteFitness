@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     label: "Join Now",
-    path: "/join",
+    path: "https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o",
     id: 4,
   },
 ];
@@ -73,7 +73,7 @@ export default function Header() {
                           : "border-transparent"
                       } ${
                         item.id == "4" && "text-red-700 font-extrabold text-lg"
-                      } ${item.id != "4" && "text-gray-800"}`}
+                      }`}
                     >
                       {item.label}
                     </a>
