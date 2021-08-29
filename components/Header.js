@@ -67,7 +67,7 @@ export default function Header() {
                 {navItems.map((item, i) => (
                   <Link href={item.path} key={i}>
                     <a
-                      className={`py-2 mt-2  border-b-2  md:mt-0 focus:outline-none focus:shadow-outline cursor-pointer hover:border-red-700  hover:text-gray-800 ${
+                      className={`py-2 mt-2 border-b-2 md:mt-0 focus:outline-none focus:shadow-outline cursor-pointer hover:border-red-700  hover:text-gray-800 ${
                         router.pathname === item.path
                           ? "border-red-700"
                           : "border-transparent"
