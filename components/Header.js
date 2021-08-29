@@ -64,21 +64,36 @@ export default function Header() {
           <div className="flex items-center justify-center">
             <div className="hidden sm:block ">
               <div className="flex items-center space-x-4 md:space-x-8">
-                {navItems.map((item, i) => (
-                  <Link href={item.path} key={i}>
-                    <a
-                      className={`py-2 mt-2 text-base border-b-2 font-semibold md:mt-0 focus:outline-none focus:shadow-outline cursor-pointer hover:border-red-700 text-gray-800 hover:text-gray-800 ${
-                        router.pathname === item.path
-                          ? "border-red-700"
-                          : "border-transparent"
-                      } ${
-                        item.id == "4" && "text-red-700 font-extrabold text-lg"
-                      }`}
-                    >
-                      {item.label}
-                    </a>
-                  </Link>
-                ))}
+                {navItems.map(
+                  (item, i) =>
+                    item.id != "4" && (
+                      <Link href={item.path} key={i}>
+                        <a
+                          className={`py-2 mt-2 text-base border-b-2 font-semibold md:mt-0 focus:outline-none focus:shadow-outline cursor-pointer hover:border-red-700 text-gray-800 hover:text-gray-800 ${
+                            router.pathname === item.path
+                              ? "border-red-700"
+                              : "border-transparent"
+                          } ${
+                            item.id == "4" &&
+                            "text-red-700 font-extrabold text-lg"
+                          }`}
+                        >
+                          {item.label}
+                        </a>
+                      </Link>
+                    )
+                )}
+                <Link href={navItems[4].path}>
+                  <a
+                    className={`py-2 mt-2 border-b-2 md:mt-0 focus:outline-none focus:shadow-outline cursor-pointer hover:border-red-700 text-red-700 font-extrabold text-lg hover:text-gray-800 ${
+                      router.pathname === navItems[4].path
+                        ? "border-red-700"
+                        : "border-transparent"
+                    } `}
+                  >
+                    {navItems[4].label}
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
