@@ -72,8 +72,8 @@ export default function Header() {
                           ? "border-red-700"
                           : "border-transparent"
                       } ${
-                        item.id == 4 && "text-red-700 font-extrabold text-lg"
-                      } ${item.id != 4 && "text-gray-800"}`}
+                        item.id == "4" && "text-red-700 font-extrabold text-lg"
+                      } ${item.id != "4" && "text-gray-800"}`}
                     >
                       {item.label}
                     </a>
