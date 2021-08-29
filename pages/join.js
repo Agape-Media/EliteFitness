@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import { Title, SubTitle, PageContainer } from "../components/pageUtils";
+import { Title, PageContainer } from "../components/pageUtils";
 import Link from "next/link";
 
 export default function Join() {
