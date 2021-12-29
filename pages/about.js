@@ -28,8 +28,8 @@ export default function About() {
           </Content>
 
           <Content>
-            By the end of 2021, we will be moving from our current location to
-            9701 Spencer Hwy, La Porte, TX, the previous home to FoodTown.
+            In 2022, we will be moving from our current location to 9701 Spencer
+            Hwy, La Porte, TX, the previous home to FoodTown.
           </Content>
 
           <Content>
