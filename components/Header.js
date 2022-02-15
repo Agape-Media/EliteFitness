@@ -20,16 +20,16 @@ const navItems = [
     path: "/contact",
     id: 2,
   },
-  {
-    label: "Member Portal",
-    path: "https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ",
-    id: 3,
-  },
-  {
-    label: "Join Now",
-    path: "/join",
-    id: 4,
-  },
+  // {
+  //   label: "Member Portal",
+  //   path: "https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ",
+  //   id: 3,
+  // },
+  // {
+  //   label: "Join Now",
+  //   path: "/join",
+  //   id: 4,
+  // },
 ];
 
 export default function Header() {
