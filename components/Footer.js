@@ -69,7 +69,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="text-sm text-gray-600 font-semibold py-1">
-                Copyright © The Elite Fiteness
+                Copyright © The Elite Fitness
               </div>
             </div>
           </div>
