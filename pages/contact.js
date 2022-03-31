@@ -97,16 +97,16 @@ const pageData = {
     },
   ],
   join: [
-    // {
-    //   label: "Member Portal",
-    //   value: "Gym Master Member Portal | Home (gymmasteronline.com)",
-    //   link: "https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ",
-    // },
-    // {
-    //   label: "Join Now",
-    //   value:
-    //     "Gym Master Member Portal | Choose a Membership (gymmasteronline.com)",
-    //   link: "https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o",
-    // },
+    {
+      label: "Member Portal",
+      value: "Gym Master Member Portal | Home (gymmasteronline.com)",
+      link: "https://lift.clubautomation.com/",
+    },
+    {
+      label: "Join Now",
+      value:
+        "Gym Master Member Portal | Choose a Membership (gymmasteronline.com)",
+      link: "https://elitefitness.gymmasteronline.com/portal/signup?session=eyJsYW5ndWFnZSI6ImVuIn0.X95cYQ.EmSwnD0HhbsqtAkem9cyT_UzR-o",
+    },
   ],
 };
