@@ -100,7 +100,7 @@ const pageData = {
     {
       label: "Member Portal",
       value: "Gym Master Member Portal | Home (gymmasteronline.com)",
-      link: "https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ",
+      link: "https://lift.clubautomation.com/",
     },
     {
       label: "Join Now",

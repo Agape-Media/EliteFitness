@@ -22,7 +22,7 @@ const navItems = [
   },
   {
     label: "Member Portal",
-    path: "https://elitefitness.gymmasteronline.com/portal/login?session=eyJsYW5ndWFnZSI6ImVuIn0.YFK2-A.b6KbKnCoaxAmxRDc07W2c5VGlaQ",
+    path: "https://lift.clubautomation.com/",
     id: 3,
   },
   {
