@@ -99,13 +99,12 @@ const pageData = {
   join: [
     {
       label: "Member Portal",
-      value: "Gym Master Member Portal | Home (gymmasteronline.com)",
+      value: "Club Automation Member Portal | Home (lift.chubautomation.com)",
       link: "https://lift.clubautomation.com/",
     },
     {
       label: "Join Now",
-      value:
-        "Gym Master Member Portal | Choose a Membership (gymmasteronline.com)",
+      value: "Club Automation Member Portal | Home (lift.chubautomation.com)",
       link: "https://lift.clubautomation.com/",
     },
   ],
