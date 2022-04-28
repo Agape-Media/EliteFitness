@@ -19,7 +19,7 @@ export default function Join() {
           </Content>
 
           <div className="flex justify-center">
-            <Link href="https://lift.clubautomation.com/membership-application/wizard/1?iframe=on">
+            <Link href="https://lift.clubautomation.com/member-portal/locations/1/memberships">
               <button className="cursor-pointer text-xl font-light mt-8 border border-gray-800  text-gray-800 hover:bg-black hover:text-white px-4 py-2 transition duration-300 ease-in-out focus:outline-none">
                 Join Now
               </button>

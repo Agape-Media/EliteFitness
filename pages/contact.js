@@ -105,7 +105,7 @@ const pageData = {
     {
       label: "Join Now",
       value: "Club Automation Member Portal | Home (lift.chubautomation.com)",
-      link: "https://lift.clubautomation.com/membership-application/wizard/1?iframe=on",
+      link: "https://lift.clubautomation.com/member-portal/locations/1/memberships",
     },
   ],
 };
